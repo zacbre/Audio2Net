@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <LangVersion>latest</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Deterministic>false</Deterministic>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CSCore" Version="1.2.1.2" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Windows.CsWinRT" Version="1.2.6" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Interop\Interface\IPolicyConfigVista.cs" />
+    <Compile Remove="Interop\Interface\IPolicyConfigX.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <CsWinRTWindowsMetadata>sdk</CsWinRTWindowsMetadata>
+  </PropertyGroup>
+</Project>
