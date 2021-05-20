@@ -1,5 +1,5 @@
 # Audio2Net
-A networked audio application to send audio from one PC to another
+A networked audio application to send audio from one PC to another with extremely low latency.
 
 To have your PC not output any audio from the speakers, use the following software:
 https://vb-audio.com/Cable/index.htm
